@@ -1,7 +1,7 @@
 /*
  * This program ilustrates how to implement binary search algorithem.
  * The user provide randomal value and the program searchs this value
- * in the given array. If the value is found the led is blinkin.
+ * in the given array. If the value is found the led is blinking.
  *
  */
 #include <stdbool.h>
