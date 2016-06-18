@@ -13,7 +13,7 @@
 
 #define N 10    //maximum integers in an array
 
-int PinData=2;  //Set bit two in PortF (turning on red led)
+int PinData=2;  //Set bit two in the PortF (turning on red led)
 
 //-------------Function declarations------------------------
 void LedHandler(void); //This function handels led operation
@@ -66,7 +66,7 @@ void LedHandler(void)
 /*
  * This function performs binary searching in given array
  * input: pointer to array of integers, size of array, and data to be found
- * output: boolian value, the data found or not
+ * output: boolian value, the data exist or not
  */
 bool BinarySearch(unsigned long *A, unsigned long n, unsigned long data)
 {
@@ -80,7 +80,7 @@ bool BinarySearch(unsigned long *A, unsigned long n, unsigned long data)
 		Mid =Low + (High - Low)/2;
 
 		if(A[Mid] == data)
-			return true; // data have found in given array
+			return true; // data has found in given array
 		else if(A[Mid] > data)
 		{
 			High = Mid-1;
@@ -90,7 +90,7 @@ bool BinarySearch(unsigned long *A, unsigned long n, unsigned long data)
 			Low = Mid + 1;
 		}
 	}
-	return false;       // data have not found in given array
+	return false;       // data has not found in given array
 }//end function
 
 
